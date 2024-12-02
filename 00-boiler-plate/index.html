@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Ensures proper character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive on various devices -->
+    <title>Document</title>
+    <!-- Page title, consider changing to something more descriptive -->
+
+    <style>
+      /* CSS styles for the page */
+      * {
+        margin: 0;
+        padding: 0;
+        /* Removes default margins and padding from all elements */
+      }
+
+      canvas {
+        display: block;
+        /* Makes the canvas a block element, filling its container */
+      }
+
+      #container {
+        height: 100vh;
+        width: 100vw;
+        /* Sets the container to full viewport height and width */
+        background-color: black;
+        /* Sets a black background for the container */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <!-- This div will contain the WebGL canvas -->
+
+    <script type="module" src="/app.js"></script>
+    <!-- Loads the JavaScript file as a module, enabling ES6 import/export -->
+  </body>
+</html>
